@@ -31,10 +31,10 @@ public class DepartmentController {
 	
 	
 	//get find by id
-		@GetMapping("/{id}")
-		public Department findDepartmentById(@PathVariable Long departmentId) {
-			log.info("Inside findDepartmentById method of DepartmentService");
-			return departmentService.findDepartmentById(departmentId);
-		}
+	@GetMapping("/{id}")
+	public Department findDepartmentById(@PathVariable("id") Long departmentId) {
+		log.info("Inside findDepartmentById method of DepartmentService");
+		return departmentService.findDepartmentById(departmentId);
+	}
 
 }
