@@ -8,4 +8,8 @@ import com.example.departmetservice.entity.Department;
 @Repository
 public interface DepartmentRepository extends JpaRepository<Department, Long> {
 
+	public Department findByDepartmentId(Long departmentId);
+
+	
+
 }
