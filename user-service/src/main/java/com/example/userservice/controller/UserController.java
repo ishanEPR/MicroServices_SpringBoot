@@ -32,7 +32,7 @@ public class UserController {
 	
 	@GetMapping("/{id}")
 	public ResponseTemplateVO getUserWithDepartment(@PathVariable("id") Long userId) {
-		log.info("Inside saveUser method in userController ");
+		log.info("Inside getUserWithDepartment method in userController ");
 		return userService.getUserWithDepartment(userId);
 	}
 	
